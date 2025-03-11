@@ -1,0 +1,455 @@
+/* mobile */
+@media screen and (max-width: 480px) {
+    #section1, #footer {
+        width: 85%;
+        margin: 0 auto;
+    }
+    /* 헤드 */
+    #head {
+        width: 80vw;
+        gap: 50% 2%;
+    }
+    #head img {
+        max-width: 150px;
+    }
+    #login img {
+        max-width: 30px;
+    }
+    #nav {
+        display: none;
+    }
+    #hamburger {
+        display: block;
+    }
+    /* 슬라이더 */
+    .sld > div{
+        width: 85%;
+        height: 70% ;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .main_left > h1 {
+        font-size : 1.6rem ;
+        padding-top: 15px;
+        padding-bottom: 60px;
+    }
+    .main_left > h3 {
+        font-size : 0.8rem;
+        letter-spacing: 0.2px;
+    }
+    .main_left > span {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+    .main_left > p {
+        font-size: 0.75rem;
+        padding-bottom: 20px;
+    }
+    .main_right > a {
+        display: block;
+        max-width: 120px;
+        height: 50px;
+        line-height: 50px;
+    }
+    /* 슬라이드 진행바 */
+    #indicator_wrap {
+        bottom: 120px; right: 50px;
+    }
+    /* EXHIBITION */
+    #ctt1 {
+        margin: 0 auto;
+        padding : 100px 0 40px;
+        overflow: hidden;
+    }
+    #scroll-indicator {
+        width: 60px;
+    }
+    #ctt1 > div {
+        margin-bottom: 20px;
+    }
+    #ctt1 h2 {
+        font-size: 1.2rem;
+    }
+    #exhibit {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(127px, 1fr));
+        grid-template-rows: 1fr 1fr;
+        font-size: 0.5rem;
+        gap: 4%;
+        overflow-x: hidden;
+    }
+    .images {
+        width: 100%;
+        height: auto;
+        min-width: 100px;
+    }
+    .images img{
+        width: 100%;
+        height: auto;
+    }
+    .text {
+        font-size: 0.8rem;
+        line-height: 18px;
+        font-weight: 600;
+        padding: 5% 0;
+        height: fit-content;
+    }
+    .tap {
+        font-size: 0.5rem;
+        bottom: 65px; right: 5px;
+        background-color: #fcfdfd;
+        color: #e40013;
+    }
+
+    /* ctt2 */
+    #ctt2 {
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+    #ctt2 > div {
+        width: 100%;
+    }
+    .flex_ctt {
+        margin-bottom: 20px;
+    }
+    .flex_ctt h2 {
+        font-size: 1.4rem;
+    }
+    .flex_ctt a {
+        font-size: 0.6rem;
+    }
+    .ntc_ctt2 > li {
+        width: 49%;
+        min-width: 100px;
+    }
+    .images2 {
+        width: 100%;
+        height: fit-content;
+    }
+    .images2 > img {
+        width: 100%;
+    }
+    #banner {
+        width: 100%;
+        height: fit-content;
+        margin: 20px auto 40px;
+    }
+    #banner img {
+        width: 100%;
+    }
+    /* 푸터 */
+    #section2 {
+        height: max-content;
+        font-size : 0.6rem;
+    }
+    #footer {
+        flex-direction: column;
+    }
+    #foo_left {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #foo_left  a {
+        width: 100%;
+    }
+    #foo_left > div > a > img {
+        width: 70%;
+    }
+    #foo_left > div > span {
+        margin: 4px 0 20px;
+        font-size: 0.5rem;
+    }
+    #info {
+        width: 300px;
+        margin: 20px 0;
+    }
+    #foo_right {
+        gap: 40px;
+        line-height: 18px;
+        margin: 60px 0 180px ;
+    }
+    .bot_menu a {
+        line-height: 18px;
+    }
+}
+/* 태블릿 */
+@media (min-width: 481px) and  (max-width: 768px) {
+    /* header */
+    #head_wrap > a > img {
+        width: 250px;
+    }
+    #nav {
+        display: none;
+    }
+    #hamburger {
+        display: block;
+    }
+    #mob_nav {
+        display: none;
+    }
+    #section1, #footer {
+        width: 85%;
+    }
+    /* slide */
+    .sld > div {
+        margin: 250px auto 120px;
+        width: 85%;
+    }
+    h3 {
+        font-size: 1rem;
+        letter-spacing: 1.2px;
+    }
+    .main_left {
+        font-size: 0.9rem;
+    }
+    .main_left > h1 {
+        padding-bottom: 40px;
+    }
+    .main_left > p {
+        padding-bottom: 0;
+    }
+    .main_right > a {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    /* ctt1 */
+    #scroll-indicator {
+        width: 100px;
+    }
+    #ctt1 {
+        padding: 100px 0;
+    }
+    .ntc_ctt1 {
+        font-size: 0.7rem;
+    }
+    #exhibit > li {
+        height: fit-content;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    .images {
+        height: fit-content;
+    }
+    .images img {
+        width: 100%;
+        min-width: 210px;
+    }
+    .text {
+        font-size: 0.9rem;
+        line-height: 20px;
+        padding: 10px 0;
+    }
+    .tap {
+        font-size: 0.5rem;
+        bottom: 25px;
+    }
+    
+    /*ctt2*/
+    #ctt2 {
+        width: 100%;
+        margin: 20px 0;
+    }
+    #ctt2 > div {
+        width: 100%;
+    }
+    .flex_ctt {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .flex_ctt > h2 {
+        letter-spacing: -1px;
+    }
+    .flex_ctt > a {
+        font-size: 0.5rem;
+    }
+    .ntc_ctt2 {
+        gap: 2%;
+    }
+    .ntc_ctt2 > li {
+        width: 49%;
+        height: fit-content;
+    }
+    .images2 {
+        width: 100%;
+        height: fit-content;
+    }
+    .images2 > img {
+        width: 100%;
+        height: fit-content;
+    }
+    .tab_text {
+        font-size: 0.75rem;
+        letter-spacing: -1.2px;
+        height: fit-content;
+    }
+    /*banner*/
+    #banner {
+        max-width : 800px;
+        height:fit-content;
+        margin : 60px auto;
+    }
+    #banner img {
+        width : 100%;
+    }
+    /*footer*/
+    #footer {
+        font-size: 0.5rem;
+    }
+    #foo_left {
+        gap: 40px;
+    }
+    #foo_left  img {
+        width: 150px;
+    }
+    #foo_left > div > span {
+        font-size: 0.45rem;
+        line-height: 15px;
+        margin-bottom: 20px;
+    }
+    #info {
+        width: 180px;
+        line-height: 18px;
+    }
+    #info span {
+        width: 50px;
+    }
+    #foo_right {
+        gap: 6%;
+    }
+    .bot_menu a {
+        display: inline-block;
+        width: 65px;
+        line-height: 17px;
+    }
+}
+/*노트북*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    #section1, #footer {
+        width: 85%;
+        margin: 0 auto;
+    }
+    #head_wrap > a > img {
+        min-width: 150px;
+        max-width: 200px;
+    }
+    #nav {
+        display: flex;
+        gap: 2%;
+        font-size: 0.9rem;
+    }
+    #nav > li {
+        width: 110px;
+    }
+    .sub_nav {
+        font-size: 0.8rem;
+        top: 65px;
+    }
+    .sub_nav > li {
+        width: 99px;
+    }
+    #nav > li:nth-child(5) > .sub_nav > li:nth-child(3) {
+        font-size: 0.75rem;
+        letter-spacing:-1.6px;
+    }
+    #hamburger {
+        display: none;
+    }
+    /* 슬라이드 */
+    .sld > div {
+        width: 85%;
+        margin: 300px auto 0;
+    }
+    .main_left > p {
+        padding-bottom: 0;
+    }
+
+    /*ctt1*/
+    #ctt1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 120px 0;
+    }
+    #exhibit > li {
+        width: 33.3%;
+        height: fit-content;
+        font-size: 0.85rem;
+    }
+    .images {
+        width: 100%;
+        height: fit-content;
+    }
+    .images > img {
+        width: 100%;
+        min-width: 275px;
+    }
+    .text {
+        padding: 15px 0  ;
+        font-size: 1.2rem;
+        line-height: 23px;
+    }
+    .tap {
+        bottom: 40px;
+    }
+    /*ctt2*/
+    #ctt2 {
+        max-width: 1200px;
+        margin: 40px auto;
+    }
+    .flex_ctt {
+        margin-top: 0;
+    }
+    .flex_ctt h2 {
+        letter-spacing: -0.8px;
+    }
+    .flex_ctt a {
+        font-size: 0.8rem;
+    }
+    .ntc_ctt2 > li {
+        width: 49% ;
+        height: fit-content;
+    }
+    .images2 {
+        width: 100%;
+        height: fit-content;
+    }
+    .images2 > img {
+        width: 100%;
+        height: fit-content;
+    }
+    .tab_text {
+        font-size: 0.98rem;
+    }
+    /* banner */
+    #banner {
+        width: 100%;
+        height: fit-content;
+        margin:  60px auto;
+    }
+    #banner > img {
+        max-width: 870px;
+    }
+
+    /* footer */
+    #footer {
+        max-width: 1200px;
+        font-size: 0.65rem;
+    }
+    #foo_left {
+        width: 50%;
+        gap: 2%;
+    }
+    #foo_left img {
+        width: 200px;
+    }
+    #foo_left > div > span {
+        font-size: 0.55rem;
+    }
+    #info {
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백남준 아트센터</title>
+    <!-- 글꼴 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <!-- css초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <!-- css연결 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- jquery, gsap, scrolltrigger, js파일 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header id="head">
+        <div id="head_wrap">
+            <a href="#"><img src="images/logo_artcenter.png" alt="백남준 아트센터 메인로고"></a>
+            <ul id="nav">
+                <li>
+                    <a href="#">백남준아트센터</a>
+                    <ul class="sub_nav">
+                        <li><a href="#">미션</a></li>
+                        <li><a href="#">건축</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">조직</a></li>
+                        <li><a href="#">보도자료</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">전시·프로그램</a>
+                    <ul class="sub_nav">
+                        <li><a href="#">전시·프로그램</a></li>
+                        <li><a href="#">문화가 있는 날</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">전시 안내</a>
+                    <ul class="sub_nav">
+                        <li><a href="#">관람안내</a></li>
+                        <li><a href="#">단체관람</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="#">편의시설</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">배움</a>
+                    <ul class="sub_nav">
+                        <li><a href="#">NJP학교</a></li>
+                        <li><a href="#">NJP크리에이티브</a></li>
+                        <li><a href="#">NJP아카데미</a></li>
+                        <li><a href="#">도슨트 양성</a></li>
+                        <li><a href="#">교육자료</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">소장품</a>
+                    <ul class="sub_nav">
+                        <li><a href="#">소장품</a></li>
+                        <li><a href="#">아카이브</a></li>
+                        <li><a href="#">백남준의 비디오 서재</a></li>
+                    </ul>               
+                </li>
+                <li>
+                    <a href="#">연구</a>
+                    <ul class="sub_nav">
+                        <li><a href="#">백남준</a></li>
+                        <li><a href="#">NJP채널</a></li>
+                        <li><a href="#">출판</a></li>
+                        <li><a href="#">NJP 리더</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="nav_right">
+                <!-- 로그인 아이콘 -->
+                <a href="#login" id="login"><img src="images/login(white).png" alt="로그인 아이콘"></a>
+                
+                <!-- 햄버거 버튼 -->
+                <div id="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <!-- 모바일 메뉴 -->
+            <ul id="mob_nav">
+                <li>
+                    <a href="#">백남준아트센터</a>
+                    <ul class="sub_mob">
+                        <li><a href="#">미션</a></li>
+                        <li><a href="#">건축</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">조직</a></li>
+                        <li><a href="#">보도자료</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">전시·프로그램</a>
+                    <ul class="sub_mob">
+                        <li><a href="#">전시·프로그램</a></li>
+                        <li><a href="#">문화가 있는 날</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">전시 안내</a>
+                    <ul class="sub_mob">
+                        <li><a href="#">관람안내</a></li>
+                        <li><a href="#">단체관람</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="#">편의시설</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">배움</a>
+                    <ul class="sub_mob">
+                        <li><a href="#">NJP학교</a></li>
+                        <li><a href="#">NJP크리에이티브</a></li>
+                        <li><a href="#">NJP아카데미</a></li>
+                        <li><a href="#">도슨트 양성</a></li>
+                        <li><a href="#">교육자료</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">소장품</a>
+                    <ul class="sub_mob">
+                        <li><a href="#">소장품</a></li>
+                        <li><a href="#">아카이브</a></li>
+                        <li><a href="#">백남준의 비디오 서재</a></li>
+                    </ul>               
+                </li>
+                <li>
+                    <a href="#">연구</a>
+                    <ul class="sub_mob">
+                        <li><a href="#">백남준</a></li>
+                        <li><a href="#">NJP채널</a></li>
+                        <li><a href="#">출판</a></li>
+                        <li><a href="#">NJP 리더</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- 메인페이지 -->
+    <div id="slider">
+        <div id="slides">
+            <div class="sld">
+                <div>
+                    <div class="main_left">
+                        <h3>DISPLAY</h3>
+                        <h1>숨결 노래</h1>
+                        <span>2024.09.12~2024.12.15</span>
+                        <p>앤 덕희 조던, 에글레 부드비티테, 우메다 테츠야, 최찬숙</p>
+                    </div>
+                    <div class="main_right">
+                        <a href="#">예약하기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sld">
+                <div>
+                    <div class="main_left">
+                        <h3>DISPLAY</h3>
+                        <h1>랜덤 액세스 프로젝트 4.0</h1>
+                        <span>2025.02.20~2025.06.29</span>
+                        <p>고요손, 김호남, 사룻 수파수티벡, 얀투, 장한나, 정혜선·육성민, 한우리</p>
+                    </div>
+                    <div class="main_right">
+                        <a href="#">예약하기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sld">
+                <div>
+                    <div class="main_left">
+                        <h3>WORKSHOP</h3>
+                        <h1>날개의 배낭: 감각 네트워크</h1>
+                        <span>2025.02.28~2025.03.01</span>
+                        <p>관람객 누구나 참여 가능 (15명)</p>
+                    </div>
+                    <div class="main_right">
+                        <a href="#">예약하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 진행바 -->
+    <div id="indicator_wrap">
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+    </div>
+    <section id="section1">
+        <div id="ctt1">
+            <div>
+                <h2>EXHIBITION</h2>
+                <div id="scroll-indicator">
+                    <span></span>
+                </div>
+            </div>
+            <ul id="exhibit" class="ntc_ctt1">
+                <li>
+                    <a href="#" class="images"><img src="images/ntc1_5.jpg" alt="전시_달에 사는 토끼"></a>
+                    <a href="#" class="text">달에 사는 토끼:<br>거울 속 백남준의 예술</a>
+                    <span class="tap">협력전시</span><br>
+                    <span>2024. 10. 19. ~ 2025. 3. 23.</span>
+                </li>
+                <li>
+                    <a href="#" class="images"><img src="images/ntc1_6.jpg" alt="전시_백남준, 백남준 그리고 백남준"></a>
+                    <a href="#" class="text">전시_백남준, 백남준 그리고 백남준</a>
+                    <span class="tap">협력전시</span><br>
+                    <span>2024. 11. 30. ~ 2025. 3. 16.</span>
+                </li>
+                <li>
+                    <a href="#" class="images"><img src="images/ntc1_1.jpg" alt="전시_일어나2024"></a>
+                    <a href="#" class="text">일어나 2024년이야!</a>
+                    <span>2024. 3. 21. ~ 2025. 2. 23.</span>
+                </li>
+                <li>
+                    <a href="#" class="images"><img src="images/ntc1_2.jpg" alt="전시_걸리버"></a>
+                    <a href="#" class="text">걸리버</a>
+                    <span>2024. 10. 28. ~ 2025. 11. 15.</span>
+                </li>
+                <li>
+                    <a href="#" class="images"><img src="images/ntc1_3.jpg" alt="전시_도슨트 전시해설"></a>
+                    <a href="#" class="text">도슨트 전시해설</a>
+                    <span>2024. 3. 22. ~</span>
+                </li>
+                <li>
+                    <a href="#" class="images"><img src="images/ntc1_4.jpg" alt="전시_별들의 만남: 요셉 보이스"></a>
+                    <a href="#" class="text">별들의 만남: 요셉 보이스</a>
+                    <span>2024. 10. 5. ~ 2025. 11. 3.</span>
+                </li>
+            </ul>
+
+        </div>
+        <div id="ctt2">
+            <div>
+                <div class="flex_ctt"> 
+                    <h2>NJP EDUCATION</h2>
+                    <a href="#">더보기</a>
+                </div>
+                <ul class="ntc_ctt2">
+                    <li>
+                        <a href="#" class="images2"><img src="images/ntc_ctt_27.jpg" alt="교육_NJP 리더"></a>
+                        <a href="#" class="text tab_text">NJP 리더 #14 - 초-공간: 모든 것은 지금과 여기가 되려고 한다</a>
+                    </li>
+                    <li>
+                        <a href="#" class="images2"><img src="images/ntc2_1.jpg" alt="교육_우연한 악보"></a>
+                        <a href="#" class="text tab_text">일어나 2024년이야!</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="images2"><img src="images/ntc2_2.jpg" alt="교육_즐거운 감상법 제안"></a>
+                        <a href="#" class="text">즐거운 감상법 제안</a>
+                    </li> -->
+                </ul>
+            </div>
+            <div>
+                <div class="flex_ctt">
+                    <h2>PUBLICATION</h2>
+                    <a href="#">더보기</a>
+                </div>
+                <ul class="ntc_ctt2">
+                    <li>
+                        <a href="#" class="images2"><img src="images/ntc_ctt_29.jpg" alt="출판_백남준 예술-기술 보고서"></a>
+                        <a href="#" class="text tab_text">&lt;나의 축제는 거칠 것이 없어라&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#" class="images2"><img src="images/ntc3_1.jpg" alt="출판_백남준 예술-기술 보고서"></a>
+                        <a href="#" class="text tab_text">백남준 예술-기술 보고서</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="images2"><img src="images/ntc_2.jpg" alt="출판_즐거운_굿모닝 미스터 오웰 2024"></a>
+                        <a href="#" class="text">굿모닝 미스터 오웰 2024</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <a href="#" id="banner"><img src="images/banner_1.jpg" alt="워크숍 홍보 배너"></a>
+    </section>
+    <section id="section2">
+        <div id="footer">
+            <div id="foo_left">
+                <div>
+                    <a href="#"><img src="images/logo_artcenter.png" alt="백남준 하위로고"></a>
+                    <p>(재)경기문화재단 대표이사 유인택</p>
+                    <span>COPYRIGHT baekartcenter.ALL RIGHT RESERVED.</span>
+                </div>
+                <div>
+                    <p id="bold">백남준 아트센터</p>
+                    <span>(17068) 경기도 용인시 기흥구 백남준로 10 (상갈동)</span>
+                    <ul id="info">
+                        <li><span>대표전화</span>031-201-8500</li>
+                        <li><span>관람문의</span>031-201-8571</li>
+                        <li><span>FAX</span>031-201-8530</li>
+                        <li><span>EMAIL</span>info@njpartcenter.kr</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="foo_right">
+                <ul class="bot_menu">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+                <ul class="bot_menu">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">행정정보공개</a></li>
+                    <li><a href="#">경영공시</a></li>
+                    <li><a href="#">후원</a></li>
+                </ul>
+                <ul class="bot_menu">
+                    <li><a href="#">연락처</a></li>
+                    <li><a href="#">패밀리사이트</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
